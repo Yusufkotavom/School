@@ -1,7 +1,7 @@
 import NextAuth from "next-auth";
 import { NextRequest, NextResponse } from "next/server";
 
-import authConfig from "@/auth.config";
+import authConfig from "@/auth.config.middleware";
 import {
   AFTER_LOGIN_URL,
   apiAuthPrefix,
@@ -70,3 +70,5 @@ export const config = {
     "/teacher",
   ],
 };
+
+
